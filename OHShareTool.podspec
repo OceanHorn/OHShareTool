@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "OHShareTool"
-  s.version      = "0.1.0"
+  s.version      = "0.1.2"
   s.summary      = "A share tool with UMengSocial."
   s.homepage     = "https://github.com/OceanHorn/OHShareTool"
   s.license  = { :type => 'MIT', :file => 'LICENSE' }
@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.platform     = :ios
   s.platform     = :ios, '7.0'
-  s.source       = { :git => "https://github.com/OceanHorn/OHShareTool.git", :tag => "0.1.0" }
+  s.source       = { :git => "https://github.com/OceanHorn/OHShareTool.git", :tag => "0.1.2" }
   s.source_files = 'OHShareTool/*.{h,m}'
   s.public_header_files = "OHShareTool/*.h"
   s.framework  = 'UIKit'

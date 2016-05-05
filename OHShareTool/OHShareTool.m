@@ -195,8 +195,8 @@
         shareImage = [[UIImage alloc] initWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:imageURL]]];
     }
     
-//    [[UMSocialControllerService defaultControllerService] setShareText:text shareImage:shareImage socialUIDelegate:vc];
-//    [UMSocialSnsPlatformManager getSocialPlatformWithName:snsName].snsClickHandler(vc,[UMSocialControllerService defaultControllerService], YES);
+    [[UMSocialControllerService defaultControllerService] setShareText:text shareImage:shareImage socialUIDelegate:vc];
+    [UMSocialSnsPlatformManager getSocialPlatformWithName:snsName].snsClickHandler(vc,[UMSocialControllerService defaultControllerService], YES);
 }
 
 - (void)coverButtonClicked:(id)sender {

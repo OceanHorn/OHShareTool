@@ -14,9 +14,6 @@
 		FE8DA52C1CDAF556008DDB2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE8DA52A1CDAF556008DDB2D /* Main.storyboard */; };
 		FE8DA52E1CDAF556008DDB2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE8DA52D1CDAF556008DDB2D /* Assets.xcassets */; };
 		FE8DA5311CDAF556008DDB2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE8DA52F1CDAF556008DDB2D /* LaunchScreen.storyboard */; };
-		FE8DA56C1CDB1791008DDB2D /* OHShareTool.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FE8DA5661CDB1791008DDB2D /* OHShareTool.bundle */; };
-		FE8DA56D1CDB1791008DDB2D /* OHShareTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8DA5681CDB1791008DDB2D /* OHShareTool.m */; };
-		FE8DA56E1CDB1791008DDB2D /* OHSNSCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8DA56B1CDB1791008DDB2D /* OHSNSCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,12 +30,6 @@
 		FE8DA52D1CDAF556008DDB2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE8DA5301CDAF556008DDB2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE8DA5321CDAF556008DDB2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FE8DA5661CDB1791008DDB2D /* OHShareTool.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = OHShareTool.bundle; sourceTree = "<group>"; };
-		FE8DA5671CDB1791008DDB2D /* OHShareTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OHShareTool.h; sourceTree = "<group>"; };
-		FE8DA5681CDB1791008DDB2D /* OHShareTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OHShareTool.m; sourceTree = "<group>"; };
-		FE8DA5691CDB1791008DDB2D /* OHShareType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OHShareType.h; sourceTree = "<group>"; };
-		FE8DA56A1CDB1791008DDB2D /* OHSNSCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OHSNSCollectionViewCell.h; sourceTree = "<group>"; };
-		FE8DA56B1CDB1791008DDB2D /* OHSNSCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OHSNSCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +84,6 @@
 			children = (
 				FE8DA5241CDAF556008DDB2D /* AppDelegate.h */,
 				FE8DA5251CDAF556008DDB2D /* AppDelegate.m */,
-				FE8DA5651CDB1791008DDB2D /* OHShareTool */,
 				FE8DA5271CDAF556008DDB2D /* ViewController.h */,
 				FE8DA5281CDAF556008DDB2D /* ViewController.m */,
 				FE8DA52A1CDAF556008DDB2D /* Main.storyboard */,
@@ -111,20 +101,6 @@
 				FE8DA5221CDAF556008DDB2D /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		FE8DA5651CDB1791008DDB2D /* OHShareTool */ = {
-			isa = PBXGroup;
-			children = (
-				FE8DA5661CDB1791008DDB2D /* OHShareTool.bundle */,
-				FE8DA5671CDB1791008DDB2D /* OHShareTool.h */,
-				FE8DA5681CDB1791008DDB2D /* OHShareTool.m */,
-				FE8DA5691CDB1791008DDB2D /* OHShareType.h */,
-				FE8DA56A1CDB1791008DDB2D /* OHSNSCollectionViewCell.h */,
-				FE8DA56B1CDB1791008DDB2D /* OHSNSCollectionViewCell.m */,
-			);
-			name = OHShareTool;
-			path = ../../OHShareTool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,7 +165,6 @@
 			files = (
 				FE8DA5311CDAF556008DDB2D /* LaunchScreen.storyboard in Resources */,
 				FE8DA52E1CDAF556008DDB2D /* Assets.xcassets in Resources */,
-				FE8DA56C1CDB1791008DDB2D /* OHShareTool.bundle in Resources */,
 				FE8DA52C1CDAF556008DDB2D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,10 +224,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE8DA56D1CDB1791008DDB2D /* OHShareTool.m in Sources */,
 				FE8DA5291CDAF556008DDB2D /* ViewController.m in Sources */,
 				FE8DA5261CDAF556008DDB2D /* AppDelegate.m in Sources */,
-				FE8DA56E1CDB1791008DDB2D /* OHSNSCollectionViewCell.m in Sources */,
 				FE8DA5231CDAF556008DDB2D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

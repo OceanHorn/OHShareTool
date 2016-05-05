@@ -11,8 +11,8 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '7.0'
   s.source       = { :git => "https://github.com/OceanHorn/OHShareTool.git", :tag => "0.1.2" }
   s.source_files = 'OHShareTool/*.{h,m}'
-  s.public_header_files = "OHShareTool/*.h"
-  s.framework  = 'UIKit'
+  #s.public_header_files = "OHShareTool/*.h"
+  s.framework  = 'UIKit', 'Foundation'
   s.resources    = 'OHShareTool/OHShareTool.bundle'
   s.dependency 'UMengSocial', '~> 5.0'
   

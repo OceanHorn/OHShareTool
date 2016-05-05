@@ -31,6 +31,8 @@
 
 #define kBOTTOMCONTENTVIEW_HEIGHT (kLEFT_MARGIN * 2 + kCELL_HEIGHT + kBOTTOMCANCELBUTTON_HEIGHT)
 
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
 @interface OHShareTool () <UICollectionViewDelegate, UICollectionViewDataSource>
 
 @property (strong, nonatomic) UIWindow *window;
@@ -193,8 +195,8 @@
         shareImage = [[UIImage alloc] initWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:imageURL]]];
     }
     
-    [[UMSocialControllerService defaultControllerService] setShareText:text shareImage:shareImage socialUIDelegate:vc];
-    [UMSocialSnsPlatformManager getSocialPlatformWithName:snsName].snsClickHandler(vc,[UMSocialControllerService defaultControllerService], YES);
+//    [[UMSocialControllerService defaultControllerService] setShareText:text shareImage:shareImage socialUIDelegate:vc];
+//    [UMSocialSnsPlatformManager getSocialPlatformWithName:snsName].snsClickHandler(vc,[UMSocialControllerService defaultControllerService], YES);
 }
 
 - (void)coverButtonClicked:(id)sender {

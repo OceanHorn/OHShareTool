@@ -1,5 +1,4 @@
-#<Directory "/Library/WebServer/Documents">
-d::Spec.new do |s|
+Pod::Spec.new do |s|
 
   s.name         = "OHShareTool"
   s.version      = "0.1.0"
@@ -11,9 +10,10 @@ d::Spec.new do |s|
   s.platform     = :ios
   s.platform     = :ios, '7.0'
   s.source       = { :git => "https://github.com/OceanHorn/OHShareTool.git", :tag => "0.1.0" }
-  s.source_files = "OHShareTool/**/*}"
+  s.source_files = 'OHShareTool/*.{h,m}'
   s.public_header_files = "OHShareTool/*.h"
   s.framework  = 'UIKit'
+  s.resources    = 'OHShareTool/OHShareTool.bundle'
   s.dependency 'UMengSocial', '~> 5.0'
   
 end
